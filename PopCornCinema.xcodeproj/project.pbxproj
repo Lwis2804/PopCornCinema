@@ -13,6 +13,16 @@
 		AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7176332C2CA2B5001BED04 /* Main.storyboard */; };
 		AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7176362C2CA2B9001BED04 /* Assets.xcassets */; };
 		AA71763A2C2CA2B9001BED04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7176382C2CA2B9001BED04 /* LaunchScreen.storyboard */; };
+		AA7176432C2CDB44001BED04 /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176422C2CDB44001BED04 /* TapBarController.swift */; };
+		AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176472C2CDC57001BED04 /* MoviesWebService.swift */; };
+		AA71764A2C2CDC69001BED04 /* ErrorWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176492C2CDC69001BED04 /* ErrorWebService.swift */; };
+		AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71764B2C2CDC75001BED04 /* MoviesPaths.swift */; };
+		AA71764E2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71764D2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift */; };
+		AA71765B2C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176562C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift */; };
+		AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176572C2CDDEF001BED04 /* MostPopularMoviesRouter.swift */; };
+		AA71765D2C2CDDEF001BED04 /* MostPopularMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */; };
+		AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176592C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift */; };
+		AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71765A2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		AA7176362C2CA2B9001BED04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7176392C2CA2B9001BED04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA71763B2C2CA2B9001BED04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7176422C2CDB44001BED04 /* TapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
+		AA7176472C2CDC57001BED04 /* MoviesWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWebService.swift; sourceTree = "<group>"; };
+		AA7176492C2CDC69001BED04 /* ErrorWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWebService.swift; sourceTree = "<group>"; };
+		AA71764B2C2CDC75001BED04 /* MoviesPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPaths.swift; sourceTree = "<group>"; };
+		AA71764D2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUrlConfiguration.swift; sourceTree = "<group>"; };
+		AA7176562C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesPresenter.swift; sourceTree = "<group>"; };
+		AA7176572C2CDDEF001BED04 /* MostPopularMoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesRouter.swift; sourceTree = "<group>"; };
+		AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesViewController.swift; sourceTree = "<group>"; };
+		AA7176592C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesProtocols.swift; sourceTree = "<group>"; };
+		AA71765A2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,11 @@
 		AA71762C2C2CA2B4001BED04 /* PopCornCinema */ = {
 			isa = PBXGroup;
 			children = (
+				AA7176412C2CDB0C001BED04 /* TapBarController */,
+				AA7176442C2CDB51001BED04 /* Extensions */,
+				AA7176462C2CDC16001BED04 /* Services */,
+				AA71764F2C2CDCAF001BED04 /* Views */,
+				AA7176512C2CDCE0001BED04 /* Modules */,
 				AA71762D2C2CA2B4001BED04 /* AppDelegate.swift */,
 				AA71762F2C2CA2B4001BED04 /* SceneDelegate.swift */,
 				AA7176312C2CA2B4001BED04 /* ViewController.swift */,
@@ -65,6 +90,107 @@
 				AA71763B2C2CA2B9001BED04 /* Info.plist */,
 			);
 			path = PopCornCinema;
+			sourceTree = "<group>";
+		};
+		AA7176412C2CDB0C001BED04 /* TapBarController */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176422C2CDB44001BED04 /* TapBarController.swift */,
+			);
+			path = TapBarController;
+			sourceTree = "<group>";
+		};
+		AA7176442C2CDB51001BED04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA7176462C2CDC16001BED04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176472C2CDC57001BED04 /* MoviesWebService.swift */,
+				AA7176492C2CDC69001BED04 /* ErrorWebService.swift */,
+				AA71764B2C2CDC75001BED04 /* MoviesPaths.swift */,
+				AA71764D2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA71764F2C2CDCAF001BED04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA7176512C2CDCE0001BED04 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176522C2CDD37001BED04 /* MostPopularMovies */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA7176522C2CDD37001BED04 /* MostPopularMovies */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176602C2CDE0B001BED04 /* Entity */,
+				AA7176622C2CDE28001BED04 /* Router */,
+				AA7176632C2CDE37001BED04 /* Protocols */,
+				AA7176642C2CDE69001BED04 /* Presenter */,
+				AA7176662C2CDE8E001BED04 /* Interactor */,
+				AA7176652C2CDE7D001BED04 /* View */,
+			);
+			path = MostPopularMovies;
+			sourceTree = "<group>";
+		};
+		AA7176602C2CDE0B001BED04 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AA7176622C2CDE28001BED04 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176572C2CDDEF001BED04 /* MostPopularMoviesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA7176632C2CDE37001BED04 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176592C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AA7176642C2CDE69001BED04 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176562C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA7176652C2CDE7D001BED04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA7176662C2CDE8E001BED04 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AA71765A2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +266,17 @@
 			files = (
 				AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */,
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
+				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
+				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
+				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
+				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
 				AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */,
+				AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */,
+				AA71765B2C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift in Sources */,
+				AA71764E2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift in Sources */,
+				AA7176432C2CDB44001BED04 /* TapBarController.swift in Sources */,
+				AA71764A2C2CDC69001BED04 /* ErrorWebService.swift in Sources */,
+				AA71765D2C2CDDEF001BED04 /* MostPopularMoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +430,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +438,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.PopCornCinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +469,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.PopCornCinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
