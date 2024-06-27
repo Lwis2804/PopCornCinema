@@ -26,6 +26,7 @@ protocol MostPopularMovies_ViewToPresenterProtocol: AnyObject {
 	var view: MostPopularMovies_PresenterToViewProtocol? { get set }
 	var interactor: MostPopularMovies_PresenterToInteractorProtocol? { get set }
 	var router: MostPopularMovies_PresenterToRouterProtocol? { get set }
+    func getToMostPopularMovies()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -49,6 +50,7 @@ protocol MostPopularMovies_ViewToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> INTERACTOR
 protocol MostPopularMovies_PresenterToInteractorProtocol: AnyObject {
     var presenter: MostPopularMovies_InteractorToPresenterProtocol? { get set }
+    func getMostPopularMoviesToInteractor()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -71,6 +73,7 @@ protocol MostPopularMovies_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol MostPopularMovies_InteractorToPresenterProtocol: AnyObject {
+    func getMostPopularMoviesFromIntrcator(withResponde response : MostPopularResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -88,6 +91,7 @@ protocol MostPopularMovies_InteractorToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> VIEW
 protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
     var presenter: MostPopularMovies_ViewToPresenterProtocol? { get set }
+    func updateMostPopularMovies(withResponse response : MostPopularResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

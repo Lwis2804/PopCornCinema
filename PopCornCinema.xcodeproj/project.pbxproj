@@ -28,6 +28,9 @@
 		AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */; };
 		AA7176782C2D0797001BED04 /* UiVieW+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176772C2D0797001BED04 /* UiVieW+Extension.swift */; };
 		AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71767A2C2D15E2001BED04 /* String+Extension.swift */; };
+		AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */; };
+		AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */; };
+		AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesViewController.xib; sourceTree = "<group>"; };
 		AA7176772C2D0797001BED04 /* UiVieW+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiVieW+Extension.swift"; sourceTree = "<group>"; };
 		AA71767A2C2D15E2001BED04 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
+		AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
+		AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		AA7176442C2CDB51001BED04 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AA7D7FDC2C2DB723000F5A53 /* Image */,
 				AA7176792C2D15BD001BED04 /* String */,
 				AA7176762C2D0763001BED04 /* View */,
 			);
@@ -133,6 +140,7 @@
 		AA71764F2C2CDCAF001BED04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA7D7FD62C2DA646000F5A53 /* UiTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +232,31 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		AA7D7FD62C2DA646000F5A53 /* UiTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */,
+			);
+			path = UiTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */,
+				AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */,
+			);
+			path = MostPopularTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA7D7FDC2C2DB723000F5A53 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */,
+				AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */,
 				AA71763A2C2CA2B9001BED04 /* LaunchScreen.storyboard in Resources */,
 				AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */,
 				AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */,
@@ -296,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */,
 				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,
 				AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */,
 				AA7176782C2D0797001BED04 /* UiVieW+Extension.swift in Sources */,
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
 				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
 				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
+				AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */,
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
 				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
 				AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */,

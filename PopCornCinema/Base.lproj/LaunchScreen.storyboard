@@ -19,6 +19,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playstore" translatesAutoresizingMaskIntoConstraints="NO" id="B51-4r-myM">
                                 <rect key="frame" x="20" y="251" width="353" height="350"/>
+                                <color key="backgroundColor" red="0.39189472790000002" green="0.39973253009999998" blue="0.41640275719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="2a6-V4-Cbq"/>
                                 </constraints>
