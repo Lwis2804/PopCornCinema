@@ -23,6 +23,9 @@
 		AA71765D2C2CDDEF001BED04 /* MostPopularMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */; };
 		AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176592C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift */; };
 		AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71765A2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift */; };
+		AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176672C2CE20C001BED04 /* MostPopularMoviesResponse.swift */; };
+		AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71766A2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift */; };
+		AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesViewController.swift; sourceTree = "<group>"; };
 		AA7176592C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesProtocols.swift; sourceTree = "<group>"; };
 		AA71765A2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesInteractor.swift; sourceTree = "<group>"; };
+		AA7176672C2CE20C001BED04 /* MostPopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesResponse.swift; sourceTree = "<group>"; };
+		AA71766A2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesViewControllerExtension.swift; sourceTree = "<group>"; };
+		AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		AA7176602C2CDE0B001BED04 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				AA7176672C2CE20C001BED04 /* MostPopularMoviesResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				AA7176582C2CDDEF001BED04 /* MostPopularMoviesViewController.swift */,
+				AA71766A2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift */,
+				AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */,
 				AA71763A2C2CA2B9001BED04 /* LaunchScreen.storyboard in Resources */,
 				AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */,
 				AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */,
@@ -264,12 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,
 				AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */,
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
 				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
 				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
 				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
+				AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */,
 				AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */,
 				AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */,
 				AA71765B2C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift in Sources */,
