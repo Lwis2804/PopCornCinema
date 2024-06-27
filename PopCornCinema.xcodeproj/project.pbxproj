@@ -26,6 +26,8 @@
 		AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176672C2CE20C001BED04 /* MostPopularMoviesResponse.swift */; };
 		AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71766A2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift */; };
 		AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */; };
+		AA7176782C2D0797001BED04 /* UiVieW+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176772C2D0797001BED04 /* UiVieW+Extension.swift */; };
+		AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71767A2C2D15E2001BED04 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		AA7176672C2CE20C001BED04 /* MostPopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesResponse.swift; sourceTree = "<group>"; };
 		AA71766A2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesViewControllerExtension.swift; sourceTree = "<group>"; };
 		AA7176742C2CF5F8001BED04 /* MostPopularMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesViewController.xib; sourceTree = "<group>"; };
+		AA7176772C2D0797001BED04 /* UiVieW+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiVieW+Extension.swift"; sourceTree = "<group>"; };
+		AA71767A2C2D15E2001BED04 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 		AA7176442C2CDB51001BED04 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AA7176792C2D15BD001BED04 /* String */,
+				AA7176762C2D0763001BED04 /* View */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +208,22 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		AA7176762C2D0763001BED04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA7176772C2D0797001BED04 /* UiVieW+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA7176792C2D15BD001BED04 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				AA71767A2C2D15E2001BED04 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,11 +298,13 @@
 			files = (
 				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,
 				AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */,
+				AA7176782C2D0797001BED04 /* UiVieW+Extension.swift in Sources */,
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
 				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
 				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
 				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
+				AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */,
 				AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */,
 				AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */,
 				AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */,

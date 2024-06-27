@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol NetworkApiProtocol : AnyObject {
+    var urlConfiguration : MoviesUrlConfigu { get set }
+    func consumeService<T: Decodable> (withCompilationHnadler handler : @escaping (Result <T, ErrorWebService>) -> Void)
+}
