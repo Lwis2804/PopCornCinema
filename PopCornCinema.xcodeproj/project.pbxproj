@@ -12,7 +12,6 @@
 		AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176312C2CA2B4001BED04 /* ViewController.swift */; };
 		AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7176332C2CA2B5001BED04 /* Main.storyboard */; };
 		AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7176362C2CA2B9001BED04 /* Assets.xcassets */; };
-		AA71763A2C2CA2B9001BED04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7176382C2CA2B9001BED04 /* LaunchScreen.storyboard */; };
 		AA7176432C2CDB44001BED04 /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176422C2CDB44001BED04 /* TapBarController.swift */; };
 		AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176472C2CDC57001BED04 /* MoviesWebService.swift */; };
 		AA71764A2C2CDC69001BED04 /* ErrorWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176492C2CDC69001BED04 /* ErrorWebService.swift */; };
@@ -41,7 +40,6 @@
 		AA7176312C2CA2B4001BED04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA7176342C2CA2B5001BED04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA7176362C2CA2B9001BED04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA7176392C2CA2B9001BED04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA71763B2C2CA2B9001BED04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7176422C2CDB44001BED04 /* TapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
 		AA7176472C2CDC57001BED04 /* MoviesWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWebService.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				AA7176312C2CA2B4001BED04 /* ViewController.swift */,
 				AA7176332C2CA2B5001BED04 /* Main.storyboard */,
 				AA7176362C2CA2B9001BED04 /* Assets.xcassets */,
-				AA7176382C2CA2B9001BED04 /* LaunchScreen.storyboard */,
 				AA71763B2C2CA2B9001BED04 /* Info.plist */,
 			);
 			path = PopCornCinema;
@@ -320,7 +317,6 @@
 			files = (
 				AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */,
 				AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */,
-				AA71763A2C2CA2B9001BED04 /* LaunchScreen.storyboard in Resources */,
 				AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */,
 				AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */,
 			);
@@ -365,14 +361,6 @@
 				AA7176342C2CA2B5001BED04 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA7176382C2CA2B9001BED04 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA7176392C2CA2B9001BED04 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -21,7 +21,7 @@ class MostPopularTableViewCell: UITableViewCell {
     func configCell(withEntry entry : MostPopularResults?) {
         guard let entrada = entry else { return }
         self.lblMostPopularMovieTitle.text = "\(entrada.title ?? "")"
-        self.lblMostPopularMoviesId.text = "\(entrada.id ?? 0)"
+        self.lblMostPopularMoviesId.text = "\(entrada.release_date ?? "")"
         
         if let urlPoster = entry?.poster_path,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){

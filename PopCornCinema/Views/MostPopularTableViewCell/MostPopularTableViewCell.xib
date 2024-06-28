@@ -11,27 +11,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MostPopularTableViewCell" customModule="PopCornCinema" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10105037" translatesAutoresizingMaskIntoConstraints="NO" id="ykz-RQ-TV6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <color key="backgroundColor" white="0.54933799691751706" alpha="0.84525748751810847" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARD-BZ-R35">
-                        <rect key="frame" x="6" y="6" width="130" height="168"/>
+                        <rect key="frame" x="6" y="20" width="130" height="200"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="130" id="aT9-eK-oMW"/>
+                            <constraint firstAttribute="width" constant="130" id="vkk-kG-M16"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsO-vC-kwo">
-                        <rect key="frame" x="142" y="60" width="172" height="21"/>
+                        <rect key="frame" x="142" y="90" width="172" height="22"/>
+                        <color key="backgroundColor" red="0.92156857250000002" green="0.92156857250000002" blue="0.92156857250000002" alpha="0.39516908759312913" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="rX8-7D-EQV"/>
+                            <constraint firstAttribute="height" constant="22" id="SQW-gQ-DMc"/>
                         </constraints>
                         <attributedString key="attributedText">
                             <fragment content="Label">
                                 <attributes>
-                                    <color key="NSColor" red="0.92156857250000002" green="0.92156857250000002" blue="0.92156857250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="19" name="GillSans"/>
                                 </attributes>
                             </fragment>
@@ -39,14 +44,15 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHh-cG-SBL">
-                        <rect key="frame" x="142" y="87" width="156" height="21"/>
+                        <rect key="frame" x="142" y="122.66666666666667" width="156" height="16.333333333333329"/>
+                        <color key="backgroundColor" red="0.92156857250000002" green="0.92156857250000002" blue="0.92156857250000002" alpha="0.39516908760000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="vx2-Hz-Lr7"/>
+                            <constraint firstAttribute="height" constant="16.329999999999998" id="qWs-tO-aFb"/>
                         </constraints>
                         <attributedString key="attributedText">
                             <fragment content="Label">
                                 <attributes>
-                                    <color key="NSColor" red="0.92156857250000002" green="0.92156857250000002" blue="0.92156857250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="14" name="GillSans"/>
                                 </attributes>
                             </fragment>
@@ -56,19 +62,24 @@
                 </subviews>
                 <color key="backgroundColor" red="0.39189472790000002" green="0.39973253009999998" blue="0.41640275719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="MsO-vC-kwo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="60" id="4tp-1i-dRB"/>
-                    <constraint firstItem="PHh-cG-SBL" firstAttribute="top" secondItem="MsO-vC-kwo" secondAttribute="bottom" constant="6" id="9EY-nk-fLz"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="PHh-cG-SBL" secondAttribute="trailing" constant="6" id="EB0-A2-yOg"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="PHh-cG-SBL" secondAttribute="trailing" constant="6" id="Vad-v7-a6X"/>
-                    <constraint firstItem="MsO-vC-kwo" firstAttribute="leading" secondItem="ARD-BZ-R35" secondAttribute="trailing" constant="6" id="XK9-XU-qYK"/>
-                    <constraint firstItem="ARD-BZ-R35" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Y7u-uw-QzQ"/>
-                    <constraint firstAttribute="trailing" secondItem="MsO-vC-kwo" secondAttribute="trailing" constant="6" id="rEX-z8-2nP"/>
-                    <constraint firstAttribute="bottom" secondItem="ARD-BZ-R35" secondAttribute="bottom" constant="6" id="rOq-gP-7Fw"/>
-                    <constraint firstItem="ARD-BZ-R35" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="ryc-D3-rkd"/>
-                    <constraint firstItem="PHh-cG-SBL" firstAttribute="leading" secondItem="ARD-BZ-R35" secondAttribute="trailing" constant="6" id="zwd-mR-wgO"/>
+                    <constraint firstItem="ARD-BZ-R35" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="Bhv-08-zgm"/>
+                    <constraint firstItem="ARD-BZ-R35" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Llz-xk-QdW"/>
+                    <constraint firstAttribute="trailing" secondItem="ykz-RQ-TV6" secondAttribute="trailing" id="O8I-jw-XRL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PHh-cG-SBL" secondAttribute="bottom" constant="90" id="UVE-b1-KRH"/>
+                    <constraint firstItem="ykz-RQ-TV6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VGQ-fL-Bxu"/>
+                    <constraint firstItem="PHh-cG-SBL" firstAttribute="top" secondItem="MsO-vC-kwo" secondAttribute="bottom" constant="10.67" id="WkB-jG-gYZ"/>
+                    <constraint firstAttribute="bottom" secondItem="ARD-BZ-R35" secondAttribute="bottom" constant="20" id="X0M-Xe-Cym"/>
+                    <constraint firstItem="ykz-RQ-TV6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZRb-eL-f4t"/>
+                    <constraint firstAttribute="bottom" secondItem="ykz-RQ-TV6" secondAttribute="bottom" id="bl1-31-2Rd"/>
+                    <constraint firstItem="MsO-vC-kwo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="hhS-0u-Khi"/>
+                    <constraint firstItem="PHh-cG-SBL" firstAttribute="leading" secondItem="ARD-BZ-R35" secondAttribute="trailing" constant="6" id="i4F-15-PlH"/>
+                    <constraint firstItem="MsO-vC-kwo" firstAttribute="leading" secondItem="ARD-BZ-R35" secondAttribute="trailing" constant="6" id="kyz-gk-cvl"/>
+                    <constraint firstAttribute="trailing" secondItem="MsO-vC-kwo" secondAttribute="trailing" constant="6" id="mFZ-EP-haq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PHh-cG-SBL" secondAttribute="trailing" constant="6" id="xXw-hf-5vw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.59505230190000002" green="0.62665605550000003" blue="0.67668008800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="lblMostPopularMovieTitle" destination="MsO-vC-kwo" id="IHT-Gf-nhV"/>
                 <outlet property="lblMostPopularMoviesId" destination="PHh-cG-SBL" id="OVD-6z-p1p"/>
@@ -77,4 +88,7 @@
             <point key="canvasLocation" x="1.5267175572519083" y="-11.267605633802818"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="10105037" width="3000" height="2000"/>
+    </resources>
 </document>

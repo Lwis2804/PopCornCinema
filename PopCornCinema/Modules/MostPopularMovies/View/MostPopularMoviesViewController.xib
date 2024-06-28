@@ -26,7 +26,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="is5-kN-FUW"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.59505230190000002" green="0.62665605550000003" blue="0.67668008800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="is5-kN-FUW" firstAttribute="trailing" secondItem="x6S-PG-NKE" secondAttribute="trailing" id="4ON-b6-oXa"/>
                 <constraint firstItem="x6S-PG-NKE" firstAttribute="leading" secondItem="is5-kN-FUW" secondAttribute="leading" id="8S7-Hw-7sD"/>
