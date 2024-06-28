@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIView {
-    class var identifier: String { return String(describing: self) }  //IDENTIFICAR CELDAS
-    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
+   // class var identifier: String { return String(describing: self) }  //IDENTIFICAR CELDAS
+   //class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
     
     @IBInspectable  //ocupar corner radius en View
     var cornerRadius: CGFloat {
@@ -27,3 +27,5 @@ extension UIView {
         set { layer.borderWidth = newValue }
     }
 }
+
+

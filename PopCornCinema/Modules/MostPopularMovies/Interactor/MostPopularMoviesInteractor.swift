@@ -13,8 +13,18 @@ class MostPopularMoviesInteractor: MostPopularMovies_PresenterToInteractorProtoc
     private var host : String = "api.themoviedb.org"
     
 
-    func getMostPopularMoviesToInteractor() {
-  //      let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getMostPopularmovies.getPath()))
+    func getMostPopularMoviesToInteractor() { //como es la integracion de la URL  en este punto
+        let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getMostPopularmovies.getPath()))
+        service.consumeService{ [weak self] (result : Result<MostPopularResponse, ErrorWebService>) in
+            switch result {
+            case .success(let succes):
+                print(result)
+                self?.presenter?.getMostPopularMoviesFromIntrcator(withResponde: succes)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+            
+        }
     }
 }
 

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MostPopularMoviesViewController" customModule="PopCornCinema" customModuleProvider="target">
             <connections>
+                <outlet property="tableMostPopularMovies" destination="x6S-PG-NKE" id="4bS-wt-NnP"/>
                 <outlet property="view" destination="jLU-72-K7Y" id="dBg-Xi-QZr"/>
             </connections>
         </placeholder>
@@ -18,8 +19,20 @@
         <view contentMode="scaleToFill" id="jLU-72-K7Y">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-PG-NKE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="is5-kN-FUW"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="is5-kN-FUW" firstAttribute="trailing" secondItem="x6S-PG-NKE" secondAttribute="trailing" id="4ON-b6-oXa"/>
+                <constraint firstItem="x6S-PG-NKE" firstAttribute="leading" secondItem="is5-kN-FUW" secondAttribute="leading" id="8S7-Hw-7sD"/>
+                <constraint firstItem="is5-kN-FUW" firstAttribute="bottom" secondItem="x6S-PG-NKE" secondAttribute="bottom" id="j01-m9-s8p"/>
+                <constraint firstItem="x6S-PG-NKE" firstAttribute="top" secondItem="is5-kN-FUW" secondAttribute="top" id="jof-SU-ZD2"/>
+            </constraints>
             <point key="canvasLocation" x="225" y="38"/>
         </view>
     </objects>

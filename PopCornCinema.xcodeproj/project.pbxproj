@@ -31,6 +31,7 @@
 		AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */; };
 		AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */; };
 		AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */; };
+		AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
 		AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
 		AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableviewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				AA7D7FDC2C2DB723000F5A53 /* Image */,
 				AA7176792C2D15BD001BED04 /* String */,
 				AA7176762C2D0763001BED04 /* View */,
+				AA7D7FD62C2DA646000F5A53 /* UiTableViewCell */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,7 +143,7 @@
 		AA71764F2C2CDCAF001BED04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA7D7FD62C2DA646000F5A53 /* UiTableViewCell */,
+				AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,7 +238,7 @@
 		AA7D7FD62C2DA646000F5A53 /* UiTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */,
+				AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */,
 			);
 			path = UiTableViewCell;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */,
 				AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */,
 				AA71765B2C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift in Sources */,
+				AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */,
 				AA71764E2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift in Sources */,
 				AA7176432C2CDB44001BED04 /* TapBarController.swift in Sources */,
 				AA71764A2C2CDC69001BED04 /* ErrorWebService.swift in Sources */,

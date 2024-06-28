@@ -12,7 +12,7 @@ protocol NetworkApiProtocol : AnyObject {
     func consumeService<T: Decodable> (withCompilationHnadler handler : @escaping (Result <T, ErrorWebService>) -> Void) // PORQUE REGRESO UN VOID, QUE ES UN VOID
 }
 
-class moviesWebService : NetworkApiProtocol {
+class MoviesWebService : NetworkApiProtocol {
     var urlConfiguration: MoviesUrlConfigu
     
     init(urlConfiguration: MoviesUrlConfigu) {
