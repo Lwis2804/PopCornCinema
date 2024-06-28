@@ -15,7 +15,10 @@ class MostPopularMoviesInteractor: MostPopularMovies_PresenterToInteractorProtoc
 
     func getMostPopularMoviesToInteractor() { //como es la integracion de la URL  en este punto
         let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getMostPopularmovies.getPath()))
+        // en este consumo de servicio porque cambia cuando llamo a service.consumeService
+        // <#T##(Result<Decodable, ErrorWebService>) -> Void#> 
         service.consumeService{ [weak self] (result : Result<MostPopularResponse, ErrorWebService>) in
+                                                                                        //que indica el in
             switch result {
             case .success(let succes):
                 print(result)

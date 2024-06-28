@@ -8,7 +8,8 @@
 import Foundation
 
 protocol NetworkApiProtocol : AnyObject {
-    var urlConfiguration : MoviesUrlConfigu { get set }   //DUDA EN LA COMPOSICION DE ESTOS DATOS DE ENTRADA DE LA FUNCION
+    var urlConfiguration : MoviesUrlConfigu { get set }
+    //DUDA EN LA COMPOSICION DE ESTOS DATOS DE ENTRADA DE LA FUNCION
     func consumeService<T: Decodable> (withCompilationHnadler handler : @escaping (Result <T, ErrorWebService>) -> Void) // PORQUE REGRESO UN VOID, QUE ES UN VOID
 }
 
@@ -25,7 +26,7 @@ class MoviesWebService : NetworkApiProtocol {
         return}
         var strUrl = "\(url)"
         strUrl = strUrl.replacingOccurrences(of: "%3F", with: "?")
-        URLSession.shared.dataTask(with: .init(url: URL(string: strUrl) ?? URL(fileURLWithPath: ""))){ data, response, _ in //duda a paritr de aqui data y response mas in, que indican
+        URLSession.shared.dataTask(with: .init(url: URL(string: strUrl) ?? URL(fileURLWithPath: ""))){ data, response, _ in //duda a paritr de aqui data y response mas in, que indican o de donde vienen
             guard let data = data, let response = response as?
                     HTTPURLResponse,(200...299).contains(response.statusCode) else {
                 handler(.failure(.wrongJson))
