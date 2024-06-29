@@ -13,17 +13,16 @@ class NowplayingMoviesInteractor: NowplayingMovies_PresenterToInteractorProtocol
     
     func getNowPlayingMoviesToInteractor() {
         let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getNowPlayingMovies.getPath()))
-                                                    
-     /*   service.consumeService{ [weak self] (result : Result<Decodable, ErrorWebService>) in
+        service.consumeService{ [weak self] (result : Result<NowPlayingResponse, ErrorWebService>) in
             switch result {
             case .success(let succes):
                 print(result)
                 self?.presenter?.getNowPlayingMoviesFromInteractor(withResponse: succes)
             case .failure(let error):
                 print(error.localizedDescription)
-            } */
-
+            }
         }
+
     }
 }
 

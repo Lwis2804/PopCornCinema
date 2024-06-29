@@ -21,7 +21,7 @@ class MostPopularMoviesInteractor: MostPopularMovies_PresenterToInteractorProtoc
                                                                                         //que indica el in
             switch result {
             case .success(let succes):
-                print(result)
+                print(succes)
                 self?.presenter?.getMostPopularMoviesFromIntrcator(withResponde: succes)
             case .failure(let error):
                 print(error.localizedDescription)

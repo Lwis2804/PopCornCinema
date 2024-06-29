@@ -21,7 +21,7 @@ class NowplayingMoviesPresenter: NowplayingMovies_ViewToPresenterProtocol {
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension NowplayingMoviesPresenter: NowplayingMovies_InteractorToPresenterProtocol {
     func getNowPlayingMoviesFromInteractor(withResponse response: NowPlayingResponse) {
-        view?.updateNowPlayingMovies(withResponse: response) //porque actualizo la view desde aqui 
+        view?.updateNowPlayingMovies(withResponse: response) //estoy llamando a la funcion para llevar a actualizarla 
     }
     
  

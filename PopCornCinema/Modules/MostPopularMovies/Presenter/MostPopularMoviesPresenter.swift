@@ -21,7 +21,7 @@ class MostPopularMoviesPresenter: MostPopularMovies_ViewToPresenterProtocol {
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension MostPopularMoviesPresenter: MostPopularMovies_InteractorToPresenterProtocol {
     func getMostPopularMoviesFromIntrcator(withResponde response: MostPopularResponse) {
-        view?.updateMostPopularMovies(withResponse: response) //porque actualizo la view desde el presenter 
+        view?.updateMostPopularMovies(withResponse: response) //mandar a actualizar la vista
     }
     
 

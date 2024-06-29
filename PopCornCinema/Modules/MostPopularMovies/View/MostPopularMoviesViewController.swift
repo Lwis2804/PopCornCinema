@@ -30,7 +30,6 @@ class MostPopularMoviesViewController: UIViewController {
 }
 
 
-
 // MARK: - P R E S E N T E R · T O · V I E W
 extension MostPopularMoviesViewController: MostPopularMovies_PresenterToViewProtocol {
     func updateMostPopularMovies(withResponse response: MostPopularResponse) {

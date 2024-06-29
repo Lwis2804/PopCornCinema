@@ -18,4 +18,8 @@ class NowplayingMoviesViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension NowplayingMoviesViewController: NowplayingMovies_PresenterToViewProtocol {
+    func updateNowPlayingMovies(withResponse response: NowPlayingResponse) {
+        print(response)
+    }
+    
 }
