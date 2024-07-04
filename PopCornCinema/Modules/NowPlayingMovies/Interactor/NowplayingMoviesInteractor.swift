@@ -8,8 +8,8 @@ import Foundation
 
 class NowplayingMoviesInteractor: NowplayingMovies_PresenterToInteractorProtocol {
     weak var presenter: NowplayingMovies_InteractorToPresenterProtocol?
-    var metodo : String = "http"
-    var host : String = ""
+    var metodo : String = "https"
+    var host : String = "api.themoviedb.org"
     
     func getNowPlayingMoviesToInteractor() {
         let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getNowPlayingMovies.getPath()))
