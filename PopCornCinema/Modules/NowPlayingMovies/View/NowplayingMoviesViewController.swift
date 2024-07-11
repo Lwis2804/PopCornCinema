@@ -9,17 +9,20 @@ import UIKit
 class NowplayingMoviesViewController: UIViewController {
 
     var presenter: NowplayingMovies_ViewToPresenterProtocol?
+    var getNowPlayingMovies : [NowPlayingResult] = []
 
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenter?.getToNowPlayingMovies()
     }
 }
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension NowplayingMoviesViewController: NowplayingMovies_PresenterToViewProtocol {
     func updateNowPlayingMovies(withResponse response: NowPlayingResponse) {
-        print(response)
+        self.getNowPlayingMovies = response.results ?? []
     }
     
 }

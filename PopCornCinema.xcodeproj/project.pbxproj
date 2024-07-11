@@ -13,6 +13,8 @@
 		AA220B372C2F47AF00519718 /* NowplayingMoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA220B322C2F47AF00519718 /* NowplayingMoviesProtocols.swift */; };
 		AA220B382C2F47AF00519718 /* NowplayingMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA220B332C2F47AF00519718 /* NowplayingMoviesInteractor.swift */; };
 		AA220B402C2F4A4E00519718 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA220B3F2C2F4A4E00519718 /* Entity.swift */; };
+		AA4C87662C40297B00346019 /* NowPlayingMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C87642C40297B00346019 /* NowPlayingMoviesTableViewCell.swift */; };
+		AA4C87672C40297B00346019 /* NowPlayingMoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4C87652C40297B00346019 /* NowPlayingMoviesTableViewCell.xib */; };
 		AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71762D2C2CA2B4001BED04 /* AppDelegate.swift */; };
 		AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71762F2C2CA2B4001BED04 /* SceneDelegate.swift */; };
 		AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7176312C2CA2B4001BED04 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		AA220B322C2F47AF00519718 /* NowplayingMoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowplayingMoviesProtocols.swift; sourceTree = "<group>"; };
 		AA220B332C2F47AF00519718 /* NowplayingMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowplayingMoviesInteractor.swift; sourceTree = "<group>"; };
 		AA220B3F2C2F4A4E00519718 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		AA4C87642C40297B00346019 /* NowPlayingMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		AA4C87652C40297B00346019 /* NowPlayingMoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowPlayingMoviesTableViewCell.xib; sourceTree = "<group>"; };
 		AA71762A2C2CA2B4001BED04 /* PopCornCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopCornCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA71762D2C2CA2B4001BED04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA71762F2C2CA2B4001BED04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		AA4C875E2C4023AC00346019 /* NowPlayingMoviesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C87642C40297B00346019 /* NowPlayingMoviesTableViewCell.swift */,
+				AA4C87652C40297B00346019 /* NowPlayingMoviesTableViewCell.xib */,
+			);
+			path = NowPlayingMoviesTableViewCell;
+			sourceTree = "<group>";
+		};
 		AA7176212C2CA2B4001BED04 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +226,7 @@
 		AA71764F2C2CDCAF001BED04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA4C875E2C4023AC00346019 /* NowPlayingMoviesTableViewCell */,
 				AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */,
 			);
 			path = Views;
@@ -393,6 +407,7 @@
 				AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */,
 				AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */,
 				AA7176352C2CA2B5001BED04 /* Main.storyboard in Resources */,
+				AA4C87672C40297B00346019 /* NowPlayingMoviesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +427,7 @@
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
 				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
 				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
+				AA4C87662C40297B00346019 /* NowPlayingMoviesTableViewCell.swift in Sources */,
 				AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */,
 				AA220B402C2F4A4E00519718 /* Entity.swift in Sources */,
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
