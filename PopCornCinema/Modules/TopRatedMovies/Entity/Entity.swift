@@ -2,19 +2,20 @@
 //  Entity.swift
 //  PopCornCinema
 //
-//  Created by LUIS GONZALEZ on 03/07/24.
+//  Created by LUIS GONZALEZ on 04/07/24.
 //
 
 import Foundation
 
-struct UpcomingResponse : Codable {
+
+struct TopRatedResponse: Codable {
     var page : Int?
-    var results : [UpcomingResults]?
+    var results : [TopRatedResults]?
     var total_pages : Int?
     var total_results : Int?
 }
 
-struct UpcomingResults : Codable {
+struct TopRatedResults: Codable {
     var adult : Bool?
     var backdrop_path : String?
     var genre_ids : [Int]?

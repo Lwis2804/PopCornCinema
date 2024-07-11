@@ -1,6 +1,6 @@
-//  UpcomingMoviesProtocols.swift
+//  MoviesDetailMovieProtocols.swift
 //  PopCornCinema
-//  Created by LUIS GONZALEZ on 03/07/24.
+//  Created by LUIS GONZALEZ on 10/07/24.
 //  
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
 
@@ -22,11 +22,11 @@ import Foundation
  */
 
 // MARK: VIEW -> PRESENTER
-protocol UpcomingMovies_ViewToPresenterProtocol: AnyObject {
-	var view: UpcomingMovies_PresenterToViewProtocol? { get set }
-	var interactor: UpcomingMovies_PresenterToInteractorProtocol? { get set }
-	var router: UpcomingMovies_PresenterToRouterProtocol? { get set }
-    func getToUpcomingMovies()
+protocol MoviesDetailMovie_ViewToPresenterProtocol: AnyObject {
+	var view: MoviesDetailMovie_PresenterToViewProtocol? { get set }
+	var interactor: MoviesDetailMovie_PresenterToInteractorProtocol? { get set }
+	var router: MoviesDetailMovie_PresenterToRouterProtocol? { get set }
+    func getToMoviesDetailMovie()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -48,9 +48,9 @@ protocol UpcomingMovies_ViewToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> INTERACTOR
-protocol UpcomingMovies_PresenterToInteractorProtocol: AnyObject {
-    var presenter: UpcomingMovies_InteractorToPresenterProtocol? { get set }
-    func getUpcomingMoviesToInteractor()
+protocol MoviesDetailMovie_PresenterToInteractorProtocol: AnyObject {
+    var presenter: MoviesDetailMovie_InteractorToPresenterProtocol? { get set }
+    func getMoviesDetailMovieToInteractor()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -72,8 +72,8 @@ protocol UpcomingMovies_PresenterToInteractorProtocol: AnyObject {
  */
 
 // MARK: INTERACTOR -> PRESENTER
-protocol UpcomingMovies_InteractorToPresenterProtocol: AnyObject {
-    func getUpcomingMoviesFromInteractor(withResponse response : UpcomingResponse)
+protocol MoviesDetailMovie_InteractorToPresenterProtocol: AnyObject {
+    func getMoviesDetailMovieFromInteractor ( withResponse responeUp : UpcomingResponse, withResponse response : TopRatedResponse )
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -89,9 +89,9 @@ protocol UpcomingMovies_InteractorToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> VIEW
-protocol UpcomingMovies_PresenterToViewProtocol: AnyObject {
-    var presenter: UpcomingMovies_ViewToPresenterProtocol? { get set }
-    func update(withResponse response : UpcomingResponse)
+protocol MoviesDetailMovie_PresenterToViewProtocol: AnyObject {
+    var presenter: MoviesDetailMovie_ViewToPresenterProtocol? { get set }
+    func updateMoviesDetailMovieFromInteractor ( withResponse responeUp : UpcomingResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -106,5 +106,5 @@ protocol UpcomingMovies_PresenterToViewProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> ROUTER
-protocol UpcomingMovies_PresenterToRouterProtocol: AnyObject {
+protocol MoviesDetailMovie_PresenterToRouterProtocol: AnyObject {
 }

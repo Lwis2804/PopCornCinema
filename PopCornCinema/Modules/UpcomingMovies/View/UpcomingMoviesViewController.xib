@@ -9,32 +9,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowplayingMoviesViewController" customModule="PopCornCinema" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpcomingMoviesViewController" customModule="PopCornCinema" customModuleProvider="target">
             <connections>
-                <outlet property="nowPlayingMoviesTable" destination="dra-2a-skX" id="xbX-00-oLn"/>
-                <outlet property="upcomingMoviesTable" destination="dra-2a-skX" id="fUE-gA-4oD"/>
-                <outlet property="view" destination="3VO-Hp-V9G" id="cHo-0P-gDw"/>
+                <outlet property="upcomingMoviesTable" destination="kuH-kS-xbg" id="W3y-Xd-Gis"/>
+                <outlet property="view" destination="uvp-2W-2un" id="Xwg-bV-lvN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="3VO-Hp-V9G">
+        <view contentMode="scaleToFill" id="uvp-2W-2un" customClass="UpcomingResponseTableViewCell" customModule="PopCornCinema" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dra-2a-skX">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-kS-xbg">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="wGF-55-eBc"/>
+            <viewLayoutGuide key="safeArea" id="Pnv-SB-DOT"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="wGF-55-eBc" firstAttribute="bottom" secondItem="dra-2a-skX" secondAttribute="bottom" id="GDd-Ph-T5j"/>
-                <constraint firstItem="wGF-55-eBc" firstAttribute="trailing" secondItem="dra-2a-skX" secondAttribute="trailing" id="ICn-I8-58k"/>
-                <constraint firstItem="dra-2a-skX" firstAttribute="top" secondItem="wGF-55-eBc" secondAttribute="top" id="gg3-3p-5WC"/>
-                <constraint firstItem="dra-2a-skX" firstAttribute="leading" secondItem="wGF-55-eBc" secondAttribute="leading" id="rOm-gh-re6"/>
+                <constraint firstItem="Pnv-SB-DOT" firstAttribute="trailing" secondItem="kuH-kS-xbg" secondAttribute="trailing" id="ONx-fD-PKG"/>
+                <constraint firstItem="kuH-kS-xbg" firstAttribute="leading" secondItem="Pnv-SB-DOT" secondAttribute="leading" id="YiM-d9-vP2"/>
+                <constraint firstItem="Pnv-SB-DOT" firstAttribute="bottom" secondItem="kuH-kS-xbg" secondAttribute="bottom" id="gk6-gb-no4"/>
+                <constraint firstItem="kuH-kS-xbg" firstAttribute="top" secondItem="Pnv-SB-DOT" secondAttribute="top" id="oQc-qU-vQw"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="-19"/>
+            <point key="canvasLocation" x="34" y="25"/>
         </view>
     </objects>
     <resources>

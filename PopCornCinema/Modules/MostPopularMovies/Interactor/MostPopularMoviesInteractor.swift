@@ -18,7 +18,7 @@ class MostPopularMoviesInteractor: MostPopularMovies_PresenterToInteractorProtoc
         // en este consumo de servicio porque cambia cuando llamo a service.consumeService
         // <#T##(Result<Decodable, ErrorWebService>) -> Void#> 
         service.consumeService{ [weak self] (result : Result<MostPopularResponse, ErrorWebService>) in
-                                                                                        //que indica el in
+                                                                                    //que indica el in
             switch result {
             case .success(let succes):
                 print(succes)

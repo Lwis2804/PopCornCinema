@@ -9,32 +9,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowplayingMoviesViewController" customModule="PopCornCinema" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopRatedMoviesViewController" customModule="PopCornCinema" customModuleProvider="target">
             <connections>
-                <outlet property="nowPlayingMoviesTable" destination="dra-2a-skX" id="xbX-00-oLn"/>
-                <outlet property="upcomingMoviesTable" destination="dra-2a-skX" id="fUE-gA-4oD"/>
-                <outlet property="view" destination="3VO-Hp-V9G" id="cHo-0P-gDw"/>
+                <outlet property="topRatedMoviesTable" destination="eMq-fb-3Gi" id="kfc-Vj-XDF"/>
+                <outlet property="view" destination="eMq-fb-3Gi" id="b9k-6o-7A2"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="3VO-Hp-V9G">
+        <view contentMode="scaleToFill" id="fli-yI-aZD">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dra-2a-skX">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-fb-3Gi">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="wGF-55-eBc"/>
+            <viewLayoutGuide key="safeArea" id="zq7-c9-Dn0"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="wGF-55-eBc" firstAttribute="bottom" secondItem="dra-2a-skX" secondAttribute="bottom" id="GDd-Ph-T5j"/>
-                <constraint firstItem="wGF-55-eBc" firstAttribute="trailing" secondItem="dra-2a-skX" secondAttribute="trailing" id="ICn-I8-58k"/>
-                <constraint firstItem="dra-2a-skX" firstAttribute="top" secondItem="wGF-55-eBc" secondAttribute="top" id="gg3-3p-5WC"/>
-                <constraint firstItem="dra-2a-skX" firstAttribute="leading" secondItem="wGF-55-eBc" secondAttribute="leading" id="rOm-gh-re6"/>
+                <constraint firstItem="zq7-c9-Dn0" firstAttribute="trailing" secondItem="eMq-fb-3Gi" secondAttribute="trailing" id="E63-hZ-djW"/>
+                <constraint firstItem="eMq-fb-3Gi" firstAttribute="top" secondItem="zq7-c9-Dn0" secondAttribute="top" id="JlY-Dq-7Xe"/>
+                <constraint firstItem="eMq-fb-3Gi" firstAttribute="leading" secondItem="zq7-c9-Dn0" secondAttribute="leading" id="L9o-C0-KtT"/>
+                <constraint firstItem="zq7-c9-Dn0" firstAttribute="bottom" secondItem="eMq-fb-3Gi" secondAttribute="bottom" id="bEn-MA-uzA"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="-19"/>
+            <point key="canvasLocation" x="105" y="23"/>
         </view>
     </objects>
     <resources>
