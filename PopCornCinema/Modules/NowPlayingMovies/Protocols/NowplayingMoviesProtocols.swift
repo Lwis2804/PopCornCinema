@@ -1,11 +1,7 @@
-//  NowplayingMoviesProtocols.swift
-//  PopCornCinema
-//  Created by LUIS GONZALEZ on 28/06/24.
-//  
+
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
 
 import Foundation
-
 /**
  Sugerencias en el llamado de Funciones de Vista a Presenter
  :condiciones:

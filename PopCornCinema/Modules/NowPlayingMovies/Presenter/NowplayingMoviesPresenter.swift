@@ -3,7 +3,6 @@
 //  Created by LUIS GONZALEZ on 28/06/24.
 //  
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
-
 import Foundation
 
 class NowplayingMoviesPresenter: NowplayingMovies_ViewToPresenterProtocol {
