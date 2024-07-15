@@ -12,6 +12,7 @@ enum moviesPath {
     case getMostPopularmovies
     case getNowPlayingMovies
     case getUpcomingMovies
+    case getTopRatedMovies
     
     func getPath() -> String {
         switch self {
@@ -21,6 +22,8 @@ enum moviesPath {
             return "/3/movie/now_playing?api_key=f6cd5c1a9e6c6b965fdcab0fa6ddd38a"
         case .getUpcomingMovies:
             return "/3/movie/upcoming?api_key=f6cd5c1a9e6c6b965fdcab0fa6ddd38a"
+        case .getTopRatedMovies:
+            return "/3/movie/top_rated?api_key=f6cd5c1a9e6c6b965fdcab0fa6ddd38a"
         }
     }
 }
