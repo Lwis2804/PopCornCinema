@@ -38,6 +38,10 @@
 		AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */; };
 		AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */; };
 		AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */; };
+		AA8FC5D72C456DF9000F351C /* UpcomingMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC5D52C456DF9000F351C /* UpcomingMoviesTableViewCell.swift */; };
+		AA8FC5D82C456DF9000F351C /* UpcomingMoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC5D62C456DF9000F351C /* UpcomingMoviesTableViewCell.xib */; };
+		AA8FC5DC2C457712000F351C /* TopRatedMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC5DA2C457712000F351C /* TopRatedMoviesTableViewCell.swift */; };
+		AA8FC5DD2C457712000F351C /* TopRatedMoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */; };
 		AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		AA7D7FD82C2DA70A000F5A53 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
 		AA7D7FD92C2DA70A000F5A53 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
 		AA7D7FDE2C2DB747000F5A53 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		AA8FC5D52C456DF9000F351C /* UpcomingMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		AA8FC5D62C456DF9000F351C /* UpcomingMoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMoviesTableViewCell.xib; sourceTree = "<group>"; };
+		AA8FC5DA2C457712000F351C /* TopRatedMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopRatedMoviesTableViewCell.xib; sourceTree = "<group>"; };
 		AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableviewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +234,8 @@
 		AA71764F2C2CDCAF001BED04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA8FC5D92C4576EE000F351C /* TopRatedMoviesTableViewCell */,
+				AA8FC5D42C456D70000F351C /* UpcomingMoviesTableViewCell */,
 				AA4C875E2C4023AC00346019 /* NowPlayingMoviesTableViewCell */,
 				AA7D7FD72C2DA66D000F5A53 /* MostPopularTableViewCell */,
 			);
@@ -345,6 +355,24 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		AA8FC5D42C456D70000F351C /* UpcomingMoviesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC5D52C456DF9000F351C /* UpcomingMoviesTableViewCell.swift */,
+				AA8FC5D62C456DF9000F351C /* UpcomingMoviesTableViewCell.xib */,
+			);
+			path = UpcomingMoviesTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA8FC5D92C4576EE000F351C /* TopRatedMoviesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC5DA2C457712000F351C /* TopRatedMoviesTableViewCell.swift */,
+				AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */,
+			);
+			path = TopRatedMoviesTableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +431,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8FC5DD2C457712000F351C /* TopRatedMoviesTableViewCell.xib in Resources */,
+				AA8FC5D82C456DF9000F351C /* UpcomingMoviesTableViewCell.xib in Resources */,
 				AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */,
 				AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */,
 				AA7176372C2CA2B9001BED04 /* Assets.xcassets in Resources */,
@@ -418,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8FC5D72C456DF9000F351C /* UpcomingMoviesTableViewCell.swift in Sources */,
 				AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */,
 				AA220B382C2F47AF00519718 /* NowplayingMoviesInteractor.swift in Sources */,
 				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,
@@ -433,6 +464,7 @@
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
 				AA220B372C2F47AF00519718 /* NowplayingMoviesProtocols.swift in Sources */,
 				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
+				AA8FC5DC2C457712000F351C /* TopRatedMoviesTableViewCell.swift in Sources */,
 				AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */,
 				AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */,
 				AA7176302C2CA2B4001BED04 /* SceneDelegate.swift in Sources */,

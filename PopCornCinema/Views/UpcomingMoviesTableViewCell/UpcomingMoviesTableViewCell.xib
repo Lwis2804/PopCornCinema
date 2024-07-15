@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UpcomingMoviesTableViewCell" customModule="PopCornCinema" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10105037" translatesAutoresizingMaskIntoConstraints="NO" id="P2A-8Y-Qg7">
+                        <rect key="frame" x="4" y="2" width="312" height="236"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LGO-w5-Gs6">
+                        <rect key="frame" x="6" y="22" width="130" height="196"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="Joj-6g-U6k"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJm-vR-b81">
+                        <rect key="frame" x="142" y="90" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="kxH-la-EcT"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" size="19" name="GillSans-SemiBold"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28B-Cb-mVX">
+                        <rect key="frame" x="142" y="117" width="172" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="yst-QX-phZ"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="GillSans"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kJm-vR-b81" secondAttribute="trailing" constant="6" id="8Ch-v0-LSV"/>
+                    <constraint firstItem="kJm-vR-b81" firstAttribute="leading" secondItem="LGO-w5-Gs6" secondAttribute="trailing" constant="6" id="A4u-xy-hTT"/>
+                    <constraint firstAttribute="bottom" secondItem="28B-Cb-mVX" secondAttribute="bottom" constant="102" id="G1o-DC-SQJ"/>
+                    <constraint firstAttribute="bottom" secondItem="P2A-8Y-Qg7" secondAttribute="bottom" constant="2" id="Ppi-Q1-iku"/>
+                    <constraint firstItem="kJm-vR-b81" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="UbB-YB-EDi"/>
+                    <constraint firstAttribute="bottom" secondItem="LGO-w5-Gs6" secondAttribute="bottom" constant="22" id="VU1-9e-DuV"/>
+                    <constraint firstItem="LGO-w5-Gs6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="X7U-nR-baa"/>
+                    <constraint firstAttribute="trailing" secondItem="28B-Cb-mVX" secondAttribute="trailing" constant="6" id="YBr-co-F2y"/>
+                    <constraint firstItem="28B-Cb-mVX" firstAttribute="leading" secondItem="LGO-w5-Gs6" secondAttribute="trailing" constant="6" id="gfZ-V2-GUu"/>
+                    <constraint firstItem="P2A-8Y-Qg7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="hc5-D3-idF"/>
+                    <constraint firstItem="28B-Cb-mVX" firstAttribute="top" secondItem="kJm-vR-b81" secondAttribute="bottom" constant="6" id="jqp-oq-xHa"/>
+                    <constraint firstAttribute="trailing" secondItem="P2A-8Y-Qg7" secondAttribute="trailing" constant="4" id="mzh-lD-Vly"/>
+                    <constraint firstItem="LGO-w5-Gs6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="vt0-tU-ObG"/>
+                    <constraint firstItem="P2A-8Y-Qg7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="wIm-YM-vRE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backImageUpcoming" destination="P2A-8Y-Qg7" id="n7Y-Id-acf"/>
+                <outlet property="lblUpcomingDate" destination="28B-Cb-mVX" id="nc4-AH-Xhd"/>
+                <outlet property="lblUpcomingTitle" destination="kJm-vR-b81" id="Bts-By-l4b"/>
+                <outlet property="upcomingMoviesImage" destination="LGO-w5-Gs6" id="d7h-gh-hg5"/>
+            </connections>
+            <point key="canvasLocation" x="10.687022900763358" y="-11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="10105037" width="3000" height="2000"/>
+    </resources>
+</document>
