@@ -7,15 +7,23 @@
 import UIKit
 
 class NowplayingMoviesViewController: UIViewController {
-
+    @IBOutlet var nowPlayingMoviesTable: UITableView!
+    
     var presenter: NowplayingMovies_ViewToPresenterProtocol?
     var getNowPlayingMovies : [NowPlayingResult] = []
+    
 
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpNowPlayingTable()
         presenter?.getToNowPlayingMovies()
+    }
+    
+    func setUpNowPlayingTable() {
+        self.nowPlayingMoviesTable.delegate = self
+        self.nowPlayingMoviesTable.dataSource = self
+        self.nowPlayingMoviesTable.register(NowPlayingMoviesTableViewCell.nib, forCellReuseIdentifier: NowPlayingMoviesTableViewCell.identifier)
     }
 }
 
@@ -23,6 +31,9 @@ class NowplayingMoviesViewController: UIViewController {
 extension NowplayingMoviesViewController: NowplayingMovies_PresenterToViewProtocol {
     func updateNowPlayingMovies(withResponse response: NowPlayingResponse) {
         self.getNowPlayingMovies = response.results ?? []
+        DispatchQueue.main.async {
+            self.nowPlayingMoviesTable.reloadData()
+        }
     }
     
 }

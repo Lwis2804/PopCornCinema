@@ -42,6 +42,8 @@
 		AA8FC5D82C456DF9000F351C /* UpcomingMoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC5D62C456DF9000F351C /* UpcomingMoviesTableViewCell.xib */; };
 		AA8FC5DC2C457712000F351C /* TopRatedMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC5DA2C457712000F351C /* TopRatedMoviesTableViewCell.swift */; };
 		AA8FC5DD2C457712000F351C /* TopRatedMoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */; };
+		AA8FC5E02C45C477000F351C /* NowplayingMoviesViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC5DF2C45C477000F351C /* NowplayingMoviesViewControllerExtension.swift */; };
+		AA8FC5E22C45C486000F351C /* NowplayingMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC5E12C45C486000F351C /* NowplayingMoviesViewController.xib */; };
 		AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		AA8FC5D62C456DF9000F351C /* UpcomingMoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMoviesTableViewCell.xib; sourceTree = "<group>"; };
 		AA8FC5DA2C457712000F351C /* TopRatedMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedMoviesTableViewCell.swift; sourceTree = "<group>"; };
 		AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopRatedMoviesTableViewCell.xib; sourceTree = "<group>"; };
+		AA8FC5DF2C45C477000F351C /* NowplayingMoviesViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowplayingMoviesViewControllerExtension.swift; sourceTree = "<group>"; };
+		AA8FC5E12C45C486000F351C /* NowplayingMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowplayingMoviesViewController.xib; sourceTree = "<group>"; };
 		AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableviewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				AA220B312C2F47AF00519718 /* NowplayingMoviesViewController.swift */,
+				AA8FC5DF2C45C477000F351C /* NowplayingMoviesViewControllerExtension.swift */,
+				AA8FC5E12C45C486000F351C /* NowplayingMoviesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8FC5DD2C457712000F351C /* TopRatedMoviesTableViewCell.xib in Resources */,
+				AA8FC5E22C45C486000F351C /* NowplayingMoviesViewController.xib in Resources */,
 				AA8FC5D82C456DF9000F351C /* UpcomingMoviesTableViewCell.xib in Resources */,
 				AA7176752C2CF5F8001BED04 /* MostPopularMoviesViewController.xib in Resources */,
 				AA7D7FDB2C2DA70A000F5A53 /* MostPopularTableViewCell.xib in Resources */,
@@ -449,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8FC5D72C456DF9000F351C /* UpcomingMoviesTableViewCell.swift in Sources */,
+				AA8FC5E02C45C477000F351C /* NowplayingMoviesViewControllerExtension.swift in Sources */,
 				AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */,
 				AA220B382C2F47AF00519718 /* NowplayingMoviesInteractor.swift in Sources */,
 				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,

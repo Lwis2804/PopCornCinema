@@ -7,21 +7,20 @@ import Foundation
 
 class NowplayingMoviesInteractor: NowplayingMovies_PresenterToInteractorProtocol {
     weak var presenter: NowplayingMovies_InteractorToPresenterProtocol?
-    var metodo : String = "http"
-    var host : String = ""
+    private var metodo : String = "https"
+    private var host : String = "api.themoviedb.org"
     
     func getNowPlayingMoviesToInteractor() {
         let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getNowPlayingMovies.getPath()))
         service.consumeService{ [weak self] (result : Result<NowPlayingResponse, ErrorWebService>) in
             switch result {
-            case .success(let succes):
+            case .success(let succes): // porque aqui creo una constante
                 print(result)
                 self?.presenter?.getNowPlayingMoviesFromInteractor(withResponse: succes)
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
-
     }
 }
 

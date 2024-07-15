@@ -9,7 +9,8 @@ class TabBarViewController : UITabBarController {
         super.viewDidLoad()
         
         let view1 = self.createNavController(for: MostPopularMoviesRouter.createModule(), title: "Most Popular", image: UIImage(systemName: "play.fill") ?? UIImage())
-        self.viewControllers = [view1]
+        let view2 = self.createNavController(for: NowplayingMoviesRouter.createModule(), title: "Playing Now", image: UIImage(systemName: "arrow.fill") ?? UIImage())
+        self.viewControllers = [view1, view2]
 
     }
  
