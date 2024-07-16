@@ -14,13 +14,24 @@ class TopRatedMoviesTableViewCell: UITableViewCell {
     @IBOutlet var lblTopRatedTitle: UILabel!
     @IBOutlet var lblTopRatedDate: UILabel!
     
+    var downloadTask : URLSessionDownloadTask?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
     
+    func configTopCell(withEntry entry : TopRatedResults?) {
+        guard let entrada = entry else { return }
+        self.lblTopRatedTitle.text = "\(entrada.title ?? "")"
+        self.lblTopRatedDate.text = "\(entrada.release_date ?? "")"
+        
+        if let urlPoster = entry?.poster_path,
+           let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
+            downloadTask = self.topRatedImage.loadImage(url: url)
+        }
+    }
 }
