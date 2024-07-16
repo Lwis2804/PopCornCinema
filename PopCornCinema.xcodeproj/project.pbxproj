@@ -251,7 +251,6 @@
 		AA7176512C2CDCE0001BED04 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				AA8FC60D2C45DC65000F351C /* TopRatedMovies */,
 				AA220B2E2C2F476000519718 /* NowPlayingMovies */,
 				AA7176522C2CDD37001BED04 /* MostPopularMovies */,
 			);
@@ -378,13 +377,6 @@
 				AA8FC5DB2C457712000F351C /* TopRatedMoviesTableViewCell.xib */,
 			);
 			path = TopRatedMoviesTableViewCell;
-			sourceTree = "<group>";
-		};
-		AA8FC60D2C45DC65000F351C /* TopRatedMovies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TopRatedMovies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
