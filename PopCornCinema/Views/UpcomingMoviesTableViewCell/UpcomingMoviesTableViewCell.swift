@@ -25,8 +25,14 @@ class UpcomingMoviesTableViewCell: UITableViewCell {
     }
     
     
-   // func confiUpcomingCell(withEntry entry : ) {
+    func confiUpcomingCell(withEntry entry : UpcomingResults?) {
+        guard let entrada = entry else { return }
+        self.lblUpcomingTitle.text = "\(entrada.title ?? "")"
+        self.lblUpcomingDate.text = "\(entrada.release_date ?? "")"
         
-  //  }
-    
+        if let urlPoster = entrada.poster_path,
+           let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)") {
+            downloadTask = upcomingMoviesImage.loadImage(url: url)
+        }
+    }
 }

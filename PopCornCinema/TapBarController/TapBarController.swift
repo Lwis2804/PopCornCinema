@@ -11,8 +11,8 @@ class TabBarViewController : UITabBarController {
         let view1 = self.createNavController(for: MostPopularMoviesRouter.createModule(), title: "Most Popular", image: UIImage(systemName: "play.fill") ?? UIImage())
         let view2 = self.createNavController(for: NowplayingMoviesRouter.createModule(), title: "Playing Now", image: UIImage(systemName: "square.fill") ?? UIImage())
         let view3 = self.createNavController(for: PeliculasTopRouter.createModule(), title: "Top Movies", image: UIImage(systemName: "triangle.fill") ?? UIImage())
-        self.viewControllers = [view1, view2, view3]
-
+        let view4 = self.createNavController(for: ProximasPeliculasRouter.createModule(), title: "Upcoming Movies", image: UIImage(systemName: "star.fill") ?? UIImage())
+        self.viewControllers = [view1, view3, view2, view4]
     }
  
     

@@ -52,6 +52,14 @@
 		AA8FC6382C45F875000F351C /* PeliculasTopEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6372C45F875000F351C /* PeliculasTopEntity.swift */; };
 		AA8FC63A2C45FA8E000F351C /* PeliculasTopViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6392C45FA8E000F351C /* PeliculasTopViewControllerExtension.swift */; };
 		AA8FC63C2C45FA99000F351C /* PeliculasTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC63B2C45FA99000F351C /* PeliculasTopViewController.xib */; };
+		AA8FC6432C460005000F351C /* ProximasPeliculasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC63E2C460005000F351C /* ProximasPeliculasPresenter.swift */; };
+		AA8FC6442C460005000F351C /* ProximasPeliculasRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC63F2C460005000F351C /* ProximasPeliculasRouter.swift */; };
+		AA8FC6452C460005000F351C /* ProximasPeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6402C460005000F351C /* ProximasPeliculasViewController.swift */; };
+		AA8FC6462C460005000F351C /* ProximasPeliculasProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6412C460005000F351C /* ProximasPeliculasProtocols.swift */; };
+		AA8FC6472C460005000F351C /* ProximasPeliculasInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6422C460005000F351C /* ProximasPeliculasInteractor.swift */; };
+		AA8FC64F2C460059000F351C /* ProximasPeliculasEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC64E2C460059000F351C /* ProximasPeliculasEntity.swift */; };
+		AA8FC6522C46039E000F351C /* ProximasPeliculasViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC6512C46039E000F351C /* ProximasPeliculasViewControllerExtension.swift */; };
+		AA8FC6542C460489000F351C /* ProximasPeliculasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8FC6532C460488000F351C /* ProximasPeliculasViewController.xib */; };
 		AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +111,14 @@
 		AA8FC6372C45F875000F351C /* PeliculasTopEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasTopEntity.swift; sourceTree = "<group>"; };
 		AA8FC6392C45FA8E000F351C /* PeliculasTopViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasTopViewControllerExtension.swift; sourceTree = "<group>"; };
 		AA8FC63B2C45FA99000F351C /* PeliculasTopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeliculasTopViewController.xib; sourceTree = "<group>"; };
+		AA8FC63E2C460005000F351C /* ProximasPeliculasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasPresenter.swift; sourceTree = "<group>"; };
+		AA8FC63F2C460005000F351C /* ProximasPeliculasRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasRouter.swift; sourceTree = "<group>"; };
+		AA8FC6402C460005000F351C /* ProximasPeliculasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasViewController.swift; sourceTree = "<group>"; };
+		AA8FC6412C460005000F351C /* ProximasPeliculasProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasProtocols.swift; sourceTree = "<group>"; };
+		AA8FC6422C460005000F351C /* ProximasPeliculasInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasInteractor.swift; sourceTree = "<group>"; };
+		AA8FC64E2C460059000F351C /* ProximasPeliculasEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasEntity.swift; sourceTree = "<group>"; };
+		AA8FC6512C46039E000F351C /* ProximasPeliculasViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasPeliculasViewControllerExtension.swift; sourceTree = "<group>"; };
+		AA8FC6532C460488000F351C /* ProximasPeliculasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProximasPeliculasViewController.xib; sourceTree = "<group>"; };
 		AAF16AD12C2E396A003E8C8D /* UiTableviewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableviewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +283,7 @@
 		AA7176512C2CDCE0001BED04 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AA8FC63D2C45FFEC000F351C /* ProximasPeliculas */,
 				AA8FC6262C45F7EB000F351C /* PeliculasTop */,
 				AA220B2E2C2F476000519718 /* NowPlayingMovies */,
 				AA7176522C2CDD37001BED04 /* MostPopularMovies */,
@@ -459,6 +476,69 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		AA8FC63D2C45FFEC000F351C /* ProximasPeliculas */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC64D2C460031000F351C /* Entity */,
+				AA8FC64C2C460029000F351C /* Router */,
+				AA8FC64B2C460023000F351C /* Protocols */,
+				AA8FC64A2C46001D000F351C /* Presenter */,
+				AA8FC6492C460017000F351C /* Interactor */,
+				AA8FC6482C460010000F351C /* View */,
+			);
+			path = ProximasPeliculas;
+			sourceTree = "<group>";
+		};
+		AA8FC6482C460010000F351C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC6402C460005000F351C /* ProximasPeliculasViewController.swift */,
+				AA8FC6512C46039E000F351C /* ProximasPeliculasViewControllerExtension.swift */,
+				AA8FC6532C460488000F351C /* ProximasPeliculasViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA8FC6492C460017000F351C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC6422C460005000F351C /* ProximasPeliculasInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AA8FC64A2C46001D000F351C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC63E2C460005000F351C /* ProximasPeliculasPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA8FC64B2C460023000F351C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC6412C460005000F351C /* ProximasPeliculasProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AA8FC64C2C460029000F351C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC63F2C460005000F351C /* ProximasPeliculasRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA8FC64D2C460031000F351C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FC64E2C460059000F351C /* ProximasPeliculasEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +597,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8FC6542C460489000F351C /* ProximasPeliculasViewController.xib in Resources */,
 				AA8FC63C2C45FA99000F351C /* PeliculasTopViewController.xib in Resources */,
 				AA8FC5DD2C457712000F351C /* TopRatedMoviesTableViewCell.xib in Resources */,
 				AA8FC5E22C45C486000F351C /* NowplayingMoviesViewController.xib in Resources */,
@@ -542,21 +623,27 @@
 				AA7D7FDF2C2DB747000F5A53 /* Image+Extension.swift in Sources */,
 				AA220B382C2F47AF00519718 /* NowplayingMoviesInteractor.swift in Sources */,
 				AA7176682C2CE20C001BED04 /* MostPopularMoviesResponse.swift in Sources */,
+				AA8FC6472C460005000F351C /* ProximasPeliculasInteractor.swift in Sources */,
 				AA7176322C2CA2B4001BED04 /* ViewController.swift in Sources */,
 				AA220B352C2F47AF00519718 /* NowplayingMoviesRouter.swift in Sources */,
+				AA8FC6442C460005000F351C /* ProximasPeliculasRouter.swift in Sources */,
 				AA8FC62E2C45F815000F351C /* PeliculasTopViewController.swift in Sources */,
 				AA7176782C2D0797001BED04 /* UiVieW+Extension.swift in Sources */,
 				AA71762E2C2CA2B4001BED04 /* AppDelegate.swift in Sources */,
+				AA8FC6452C460005000F351C /* ProximasPeliculasViewController.swift in Sources */,
 				AA8FC62D2C45F815000F351C /* PeliculasTopRouter.swift in Sources */,
 				AA71764C2C2CDC75001BED04 /* MoviesPaths.swift in Sources */,
 				AA7176482C2CDC57001BED04 /* MoviesWebService.swift in Sources */,
 				AA4C87662C40297B00346019 /* NowPlayingMoviesTableViewCell.swift in Sources */,
 				AA8FC62F2C45F815000F351C /* PeliculasTopProtocols.swift in Sources */,
+				AA8FC6432C460005000F351C /* ProximasPeliculasPresenter.swift in Sources */,
 				AA7D7FDA2C2DA70A000F5A53 /* MostPopularTableViewCell.swift in Sources */,
 				AA220B402C2F4A4E00519718 /* Entity.swift in Sources */,
+				AA8FC6462C460005000F351C /* ProximasPeliculasProtocols.swift in Sources */,
 				AA71765C2C2CDDEF001BED04 /* MostPopularMoviesRouter.swift in Sources */,
 				AA220B372C2F47AF00519718 /* NowplayingMoviesProtocols.swift in Sources */,
 				AA71765F2C2CDDEF001BED04 /* MostPopularMoviesInteractor.swift in Sources */,
+				AA8FC6522C46039E000F351C /* ProximasPeliculasViewControllerExtension.swift in Sources */,
 				AA8FC5DC2C457712000F351C /* TopRatedMoviesTableViewCell.swift in Sources */,
 				AA71767B2C2D15E2001BED04 /* String+Extension.swift in Sources */,
 				AA71766B2C2CE402001BED04 /* MostPopularMoviesViewControllerExtension.swift in Sources */,
@@ -566,6 +653,7 @@
 				AA71765E2C2CDDEF001BED04 /* MostPopularMoviesProtocols.swift in Sources */,
 				AA71765B2C2CDDEF001BED04 /* MostPopularMoviesPresenter.swift in Sources */,
 				AA8FC62C2C45F815000F351C /* PeliculasTopPresenter.swift in Sources */,
+				AA8FC64F2C460059000F351C /* ProximasPeliculasEntity.swift in Sources */,
 				AA220B342C2F47AF00519718 /* NowplayingMoviesPresenter.swift in Sources */,
 				AAF16AD22C2E396A003E8C8D /* UiTableviewCell+Extension.swift in Sources */,
 				AA71764E2C2CDC9C001BED04 /* MoviesUrlConfiguration.swift in Sources */,
