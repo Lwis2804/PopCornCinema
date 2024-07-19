@@ -27,4 +27,13 @@ class NowplayingMoviesRouter {
 
 extension NowplayingMoviesRouter: NowplayingMovies_PresenterToRouterProtocol {
     
+    
+    func goToMoviesDetailView(with movie: ModeloMovies, andView view : NowplayingMovies_PresenterToViewProtocol) {
+        if let view = view as? NowplayingMoviesViewController {
+            let vc = MoviesDetailViewRouter.createModule(andMovie: movie)
+            view.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
 }

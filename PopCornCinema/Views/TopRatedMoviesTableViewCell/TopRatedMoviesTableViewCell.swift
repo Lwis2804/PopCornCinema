@@ -24,12 +24,12 @@ class TopRatedMoviesTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configTopCell(withEntry entry : TopRatedResults?) {
+    func configTopCell(withEntry entry : ModeloMovies?) {
         guard let entrada = entry else { return }
         self.lblTopRatedTitle.text = "\(entrada.title ?? "")"
-        self.lblTopRatedDate.text = "\(entrada.release_date ?? "")"
+        self.lblTopRatedDate.text = "\(entrada.releaseDate ?? "")"
         
-        if let urlPoster = entry?.poster_path,
+        if let urlPoster = entry?.posterPath,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = self.topRatedImage.loadImage(url: url)
         }

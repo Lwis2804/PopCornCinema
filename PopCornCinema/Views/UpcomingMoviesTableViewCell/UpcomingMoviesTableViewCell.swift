@@ -25,12 +25,12 @@ class UpcomingMoviesTableViewCell: UITableViewCell {
     }
     
     
-    func confiUpcomingCell(withEntry entry : UpcomingResults?) {
+    func confiUpcomingCell(withEntry entry : ModeloMovies?) {
         guard let entrada = entry else { return }
         self.lblUpcomingTitle.text = "\(entrada.title ?? "")"
-        self.lblUpcomingDate.text = "\(entrada.release_date ?? "")"
+        self.lblUpcomingDate.text = "\(entrada.releaseDate ?? "")"
         
-        if let urlPoster = entrada.poster_path,
+        if let urlPoster = entrada.posterPath,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)") {
             downloadTask = upcomingMoviesImage.loadImage(url: url)
         }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesDetailViewViewController" customModule="PopCornCinema" customModuleProvider="target">
+            <connections>
+                <outlet property="backViewDetail" destination="NjW-2o-W3R" id="f8S-VD-Wcg"/>
+                <outlet property="imageMovie" destination="Fjs-Gl-7SJ" id="zFx-ea-WXv"/>
+                <outlet property="lblTitleMovie" destination="8fC-Cy-sOa" id="tA7-I5-CHa"/>
+                <outlet property="overViewMovie" destination="wny-Qp-gCI" id="q9O-Dn-KrV"/>
+                <outlet property="view" destination="q5z-jq-Ajs" id="BLG-Kz-Yes"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q5z-jq-Ajs">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-2o-W3R">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fC-Cy-sOa">
+                            <rect key="frame" x="12" y="15" width="296" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="E2h-c0-HRk"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <font key="NSFont" size="24" name="GillSans-SemiBold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fjs-Gl-7SJ">
+                            <rect key="frame" x="12" y="67" width="296" height="320"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="320" id="MnG-7H-Dm3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wny-Qp-gCI">
+                            <rect key="frame" x="12" y="399" width="296" height="157"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="19" name="GillSans"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.882198751" green="0.88599520919999997" blue="0.9026432633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Fjs-Gl-7SJ" firstAttribute="leading" secondItem="NjW-2o-W3R" secondAttribute="leading" constant="12" id="CZy-QC-3l9"/>
+                        <constraint firstAttribute="trailing" secondItem="Fjs-Gl-7SJ" secondAttribute="trailing" constant="12" id="D0B-7E-OO3"/>
+                        <constraint firstAttribute="trailing" secondItem="wny-Qp-gCI" secondAttribute="trailing" constant="12" id="KwX-c1-7TU"/>
+                        <constraint firstItem="8fC-Cy-sOa" firstAttribute="top" secondItem="NjW-2o-W3R" secondAttribute="top" constant="15" id="TSC-kg-Mzw"/>
+                        <constraint firstItem="8fC-Cy-sOa" firstAttribute="leading" secondItem="NjW-2o-W3R" secondAttribute="leading" constant="12" id="UR6-fL-eF9"/>
+                        <constraint firstAttribute="trailing" secondItem="8fC-Cy-sOa" secondAttribute="trailing" constant="12" id="WyZ-hR-9NX"/>
+                        <constraint firstItem="Fjs-Gl-7SJ" firstAttribute="top" secondItem="8fC-Cy-sOa" secondAttribute="bottom" constant="12" id="c9p-sc-qS2"/>
+                        <constraint firstAttribute="bottom" secondItem="wny-Qp-gCI" secondAttribute="bottom" constant="12" id="dO3-sg-Y9k"/>
+                        <constraint firstItem="wny-Qp-gCI" firstAttribute="top" secondItem="Fjs-Gl-7SJ" secondAttribute="bottom" constant="12" id="hAA-qb-l55"/>
+                        <constraint firstItem="wny-Qp-gCI" firstAttribute="leading" secondItem="NjW-2o-W3R" secondAttribute="leading" constant="12" id="yFO-9X-eu7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="WhE-qa-OOG"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NjW-2o-W3R" firstAttribute="top" secondItem="WhE-qa-OOG" secondAttribute="top" id="Ml1-IM-IxT"/>
+                <constraint firstItem="NjW-2o-W3R" firstAttribute="leading" secondItem="WhE-qa-OOG" secondAttribute="leading" id="NmE-I1-yMq"/>
+                <constraint firstItem="WhE-qa-OOG" firstAttribute="bottom" secondItem="NjW-2o-W3R" secondAttribute="bottom" id="Wla-Bb-bGL"/>
+                <constraint firstItem="WhE-qa-OOG" firstAttribute="trailing" secondItem="NjW-2o-W3R" secondAttribute="trailing" id="tLX-UD-3bL"/>
+            </constraints>
+            <point key="canvasLocation" x="56" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

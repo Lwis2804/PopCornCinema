@@ -18,12 +18,12 @@ class MostPopularTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configCell(withEntry entry : MostPopularResults?) {
+    func configCell(withEntry entry : ModeloMovies?) {
         guard let entrada = entry else { return }
         self.lblMostPopularMovieTitle.text = "\(entrada.title ?? "")"
-        self.lblMostPopularMoviesId.text = "\(entrada.release_date ?? "")"
+        self.lblMostPopularMoviesId.text = "\(entrada.releaseDate ?? "")"
         
-        if let urlPoster = entry?.poster_path,
+        if let urlPoster = entry?.posterPath,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = mostPopularMoviesImage.loadImage(url: url)
         }

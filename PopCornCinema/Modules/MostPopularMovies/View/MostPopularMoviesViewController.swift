@@ -11,7 +11,7 @@ class MostPopularMoviesViewController: UIViewController {
     @IBOutlet var tableMostPopularMovies: UITableView!
     
     var presenter: MostPopularMovies_ViewToPresenterProtocol?
-    var mostPopularMovies : [MostPopularResults] = []
+    var mostPopularMovies : [ModeloMovies] = []
 
     
     // MARK: Lifecycle
@@ -27,6 +27,10 @@ class MostPopularMoviesViewController: UIViewController {
         self.tableMostPopularMovies.dataSource = self
         self.tableMostPopularMovies.register(MostPopularTableViewCell.nib, forCellReuseIdentifier: MostPopularTableViewCell.identifier)
     }
+    
+    
+    
+    
 }
 
 

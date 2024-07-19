@@ -11,7 +11,7 @@ class ProximasPeliculasViewController: UIViewController {
     @IBOutlet var proximasPeliculasTable: UITableView!
     
     var presenter: ProximasPeliculas_ViewToPresenterProtocol?
-    var getProximasPeliculas : [UpcomingResults] = []
+    var getProximasPeliculas : [ModeloMovies] = []
 
     // MARK: Lifecycle
     override func viewDidLoad() {

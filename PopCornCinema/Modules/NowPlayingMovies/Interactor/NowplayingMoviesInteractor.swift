@@ -6,6 +6,7 @@
 import Foundation
 
 class NowplayingMoviesInteractor: NowplayingMovies_PresenterToInteractorProtocol {
+
     weak var presenter: NowplayingMovies_InteractorToPresenterProtocol?
     private var metodo : String = "https"
     private var host : String = "api.themoviedb.org"

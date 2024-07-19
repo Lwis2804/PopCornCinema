@@ -13,4 +13,9 @@ extension NowplayingMoviesViewController : UITableViewDelegate & UITableViewData
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = getNowPlayingMovies[indexPath.row]
+        self.presenter?.didSelect(withMovie: movie)
+    }
+    
 }

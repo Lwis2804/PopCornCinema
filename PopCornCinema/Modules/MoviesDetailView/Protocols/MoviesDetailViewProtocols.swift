@@ -1,7 +1,11 @@
-
+//  MoviesDetailViewProtocols.swift
+//  PopCornCinema
+//  Created by LUIS GONZALEZ on 17/07/24.
+//  
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
 
 import Foundation
+
 /**
  Sugerencias en el llamado de Funciones de Vista a Presenter
  :condiciones:
@@ -18,14 +22,12 @@ import Foundation
  */
 
 // MARK: VIEW -> PRESENTER
-protocol NowplayingMovies_ViewToPresenterProtocol: AnyObject {
-	var view: NowplayingMovies_PresenterToViewProtocol? { get set }
-	var interactor: NowplayingMovies_PresenterToInteractorProtocol? { get set }
-	var router: NowplayingMovies_PresenterToRouterProtocol? { get set }
+protocol MoviesDetailView_ViewToPresenterProtocol: AnyObject {
+	var view: MoviesDetailView_PresenterToViewProtocol? { get set }
+	var interactor: MoviesDetailView_PresenterToInteractorProtocol? { get set }
+	var router: MoviesDetailView_PresenterToRouterProtocol? { get set }
     
-    func getToNowPlayingMovies()
-    func didSelect(withMovie : ModeloMovies)
-    func getToNowPlaying(withResponse movie :String)
+    func getNowPlayingInfo(withResponse nowResponse : String)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -47,9 +49,11 @@ protocol NowplayingMovies_ViewToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> INTERACTOR
-protocol NowplayingMovies_PresenterToInteractorProtocol: AnyObject {
-    var presenter: NowplayingMovies_InteractorToPresenterProtocol? { get set }
-    func getNowPlayingMoviesToInteractor()
+protocol MoviesDetailView_PresenterToInteractorProtocol: AnyObject {
+    var presenter: MoviesDetailView_InteractorToPresenterProtocol? { get set }
+    
+    func getToNowPlayingInfoToInteractor(withResponse nowResponse : String)
+    
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -71,9 +75,9 @@ protocol NowplayingMovies_PresenterToInteractorProtocol: AnyObject {
  */
 
 // MARK: INTERACTOR -> PRESENTER
-protocol NowplayingMovies_InteractorToPresenterProtocol: AnyObject {
+protocol MoviesDetailView_InteractorToPresenterProtocol: AnyObject {
     
-    func getNowPlayingMoviesFromInteractor(withResponse response : NowPlayingResponse)
+    func getNowPlayingMoviesInfoFromInteractor(withResponse nowResponse : NowPlayingResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -89,10 +93,10 @@ protocol NowplayingMovies_InteractorToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> VIEW
-protocol NowplayingMovies_PresenterToViewProtocol: AnyObject {
-    var presenter: NowplayingMovies_ViewToPresenterProtocol? { get set }
+protocol MoviesDetailView_PresenterToViewProtocol: AnyObject {
+    var presenter: MoviesDetailView_ViewToPresenterProtocol? { get set }
     
-    func updateNowPlayingMovies(withResponse response : NowPlayingResponse)
+    func updateNowPlayingInfo(withResponse nowResponse : NowPlayingResponse )
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -107,7 +111,5 @@ protocol NowplayingMovies_PresenterToViewProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> ROUTER
-protocol NowplayingMovies_PresenterToRouterProtocol: AnyObject {
-    
-    func goToMoviesDetailView(with movie : ModeloMovies, andView view : NowplayingMovies_PresenterToViewProtocol)
+protocol MoviesDetailView_PresenterToRouterProtocol: AnyObject {
 }

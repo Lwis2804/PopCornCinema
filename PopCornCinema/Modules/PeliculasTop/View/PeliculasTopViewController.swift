@@ -11,7 +11,7 @@ class PeliculasTopViewController: UIViewController {
     @IBOutlet var peliculasTopTable: UITableView!
     
     var presenter: PeliculasTop_ViewToPresenterProtocol?
-    var getPeliculasTop : [TopRatedResults] = []
+    var getPeliculasTop : [ModeloMovies] = []
 
     // MARK: Lifecycle
     override func viewDidLoad() {

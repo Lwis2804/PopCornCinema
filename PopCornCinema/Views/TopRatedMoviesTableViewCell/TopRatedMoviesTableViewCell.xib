@@ -86,13 +86,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="backImageTopRated" destination="tmI-Ri-6I0" id="FSV-QH-cTE"/>
                 <outlet property="lblTopRatedDate" destination="xkl-71-dwU" id="fvJ-Za-hVb"/>
                 <outlet property="lblTopRatedTitle" destination="zi2-MY-cPy" id="HTF-lD-Cnk"/>
                 <outlet property="topRatedImage" destination="tmI-Ri-6I0" id="GRN-Ez-tD9"/>
             </connections>
-            <point key="canvasLocation" x="12" y="-11"/>
+            <point key="canvasLocation" x="10.687022900763358" y="-11.267605633802818"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -10,7 +10,8 @@ class NowplayingMoviesViewController: UIViewController {
     @IBOutlet var nowPlayingMoviesTable: UITableView!
     
     var presenter: NowplayingMovies_ViewToPresenterProtocol?
-    var getNowPlayingMovies : [NowPlayingResult] = []
+    var getNowPlayingMovies : [ModeloMovies] = []
+    var movieTitle: String = ""
     
 
     // MARK: Lifecycle
@@ -29,11 +30,11 @@ class NowplayingMoviesViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension NowplayingMoviesViewController: NowplayingMovies_PresenterToViewProtocol {
+
     func updateNowPlayingMovies(withResponse response: NowPlayingResponse) {
         self.getNowPlayingMovies = response.results ?? []
         DispatchQueue.main.async {
             self.nowPlayingMoviesTable.reloadData()
         }
     }
-    
 }

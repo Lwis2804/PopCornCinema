@@ -24,12 +24,12 @@ class NowPlayingMoviesTableViewCell: UITableViewCell {
     }
     
     
-    func configCell (withEntry entry : NowPlayingResult?) {
+    func configCell (withEntry entry : ModeloMovies?) {
         guard let entrada = entry else { return }
         self.lblNowPlayingTitle.text = "\(entrada.title ?? "")"
-        self.lblNowPlayingDate.text = "\(entrada.release_date ?? "")"
+        self.lblNowPlayingDate.text = "\(entrada.releaseDate ?? "")"
         
-        if let urlPoster = entry?.poster_path,
+        if let urlPoster = entry?.posterPath,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = nowPlayingImage.loadImage(url: url)
         }
