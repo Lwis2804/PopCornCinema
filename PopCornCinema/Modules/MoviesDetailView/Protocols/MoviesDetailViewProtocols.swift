@@ -77,7 +77,7 @@ protocol MoviesDetailView_PresenterToInteractorProtocol: AnyObject {
 // MARK: INTERACTOR -> PRESENTER
 protocol MoviesDetailView_InteractorToPresenterProtocol: AnyObject {
     
-    func getNowPlayingMoviesInfoFromInteractor(withResponse nowResponse : NowPlayingResponse)
+    func getNowPlayingMoviesInfoFromInteractor(withResponse nowResponse : ModeloMovies)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -96,7 +96,7 @@ protocol MoviesDetailView_InteractorToPresenterProtocol: AnyObject {
 protocol MoviesDetailView_PresenterToViewProtocol: AnyObject {
     var presenter: MoviesDetailView_ViewToPresenterProtocol? { get set }
     
-    func updateNowPlayingInfo(withResponse nowResponse : NowPlayingResponse )
+    func updateNowPlayingInfo(withResponse nowResponse : ModeloMovies )
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

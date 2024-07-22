@@ -26,7 +26,9 @@ protocol MostPopularMovies_ViewToPresenterProtocol: AnyObject {
 	var view: MostPopularMovies_PresenterToViewProtocol? { get set }
 	var interactor: MostPopularMovies_PresenterToInteractorProtocol? { get set }
 	var router: MostPopularMovies_PresenterToRouterProtocol? { get set }
+    
     func getToMostPopularMovies()
+    func didSelect(withMovie movie : ModeloMovies)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -107,6 +109,8 @@ protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
 
 // MARK: PRESENTER -> ROUTER
 protocol MostPopularMovies_PresenterToRouterProtocol: AnyObject {
+    
+    func goToMoviesDetailView(with movie : ModeloMovies, andView view : MostPopularMoviesViewController )
 }
 
 

@@ -15,7 +15,7 @@ class MoviesDetailViewInteractor: MoviesDetailView_PresenterToInteractorProtocol
     
     func getToNowPlayingInfoToInteractor(withResponse nowResponse: String) {
         let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfigu(metodo: metodo, host: host, path: moviesPath.getNowPlayingMovies.getPath()))
-        service.consumeService{ [weak self] (result : Result<NowPlayingResponse,ErrorWebService>) in
+        service.consumeService{ [weak self] (result : Result<ModeloMovies,ErrorWebService>) in
             switch result {
             case .success(let success):
                 self?.presenter?.getNowPlayingMoviesInfoFromInteractor(withResponse: success)

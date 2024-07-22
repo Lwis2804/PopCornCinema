@@ -20,7 +20,8 @@ class MoviesDetailViewPresenter: MoviesDetailView_ViewToPresenterProtocol {
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension MoviesDetailViewPresenter: MoviesDetailView_InteractorToPresenterProtocol {
-    func getNowPlayingMoviesInfoFromInteractor(withResponse nowResponse: NowPlayingResponse) {
+    
+    func getNowPlayingMoviesInfoFromInteractor(withResponse nowResponse: ModeloMovies) {
         view?.updateNowPlayingInfo(withResponse: nowResponse)
     }
     
