@@ -7,13 +7,19 @@
 import Foundation
 
 class MostPopularMoviesPresenter: MostPopularMovies_ViewToPresenterProtocol {
-    
+
     weak var view: MostPopularMovies_PresenterToViewProtocol?
     var interactor: MostPopularMovies_PresenterToInteractorProtocol?
     var router: MostPopularMovies_PresenterToRouterProtocol?
     
     func getToMostPopularMovies() {
         interactor?.getMostPopularMoviesToInteractor()
+    }
+    
+    func didSelect(withMovie movie: ModeloMovies) {
+        if let view = view {
+            router?.goToMoviesDetailView(with: movie, andView: view)
+        }
     }
     
 }

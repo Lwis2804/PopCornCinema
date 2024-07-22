@@ -27,4 +27,12 @@ class MostPopularMoviesRouter {
 
 extension MostPopularMoviesRouter: MostPopularMovies_PresenterToRouterProtocol {
     
+    func goToMoviesDetailView(with movie: ModeloMovies, andView view: MostPopularMovies_PresenterToViewProtocol) {
+        if let view = view as? MostPopularMoviesViewController{
+            let vc = MoviesDetailViewRouter.createModule(andMovie: movie)
+            view.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
 }

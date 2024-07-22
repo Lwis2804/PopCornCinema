@@ -110,7 +110,7 @@ protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
 // MARK: PRESENTER -> ROUTER
 protocol MostPopularMovies_PresenterToRouterProtocol: AnyObject {
     
-    func goToMoviesDetailView(with movie : ModeloMovies, andView view : MostPopularMoviesViewController )
+    func goToMoviesDetailView(with movie : ModeloMovies, andView view : MostPopularMovies_PresenterToViewProtocol)
 }
 
 

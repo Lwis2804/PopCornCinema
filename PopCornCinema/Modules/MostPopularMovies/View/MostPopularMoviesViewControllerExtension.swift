@@ -19,6 +19,10 @@ extension MostPopularMoviesViewController : UITableViewDataSource & UITableViewD
         return cCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = mostPopularMovies[indexPath.row]
+        self.presenter?.didSelect(withMovie: movie)
+    }
     
 }
 

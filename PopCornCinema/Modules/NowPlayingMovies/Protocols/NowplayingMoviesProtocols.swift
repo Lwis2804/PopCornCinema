@@ -49,6 +49,7 @@ protocol NowplayingMovies_ViewToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> INTERACTOR
 protocol NowplayingMovies_PresenterToInteractorProtocol: AnyObject {
     var presenter: NowplayingMovies_InteractorToPresenterProtocol? { get set }
+    
     func getNowPlayingMoviesToInteractor()
 }
 

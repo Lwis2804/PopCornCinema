@@ -7,7 +7,7 @@ import Foundation
 
 class NowplayingMoviesPresenter: NowplayingMovies_ViewToPresenterProtocol {
 
-  
+   
     weak var view: NowplayingMovies_PresenterToViewProtocol?
     var interactor: NowplayingMovies_PresenterToInteractorProtocol?
     var router: NowplayingMovies_PresenterToRouterProtocol?
