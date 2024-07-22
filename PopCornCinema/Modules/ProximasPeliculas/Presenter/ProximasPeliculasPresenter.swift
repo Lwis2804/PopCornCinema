@@ -7,7 +7,7 @@
 import Foundation
 
 class ProximasPeliculasPresenter: ProximasPeliculas_ViewToPresenterProtocol {
-    
+     
     weak var view: ProximasPeliculas_PresenterToViewProtocol?
     var interactor: ProximasPeliculas_PresenterToInteractorProtocol?
     var router: ProximasPeliculas_PresenterToRouterProtocol?
@@ -16,7 +16,11 @@ class ProximasPeliculasPresenter: ProximasPeliculas_ViewToPresenterProtocol {
         interactor?.getProximasPeliculasToInteractor()
     }
     
-    
+    func didSeletc(withMovie movie: ModeloMovies) {
+        if let view = view {
+            router?.goToMoviesDetailView(withMovie: movie, andView:view)
+        }
+    }
 }
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R

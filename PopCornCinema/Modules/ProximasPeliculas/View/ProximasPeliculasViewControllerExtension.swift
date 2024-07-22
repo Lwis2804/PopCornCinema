@@ -13,5 +13,9 @@ extension ProximasPeliculasViewController : UITableViewDelegate & UITableViewDat
         return cCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = getProximasPeliculas[indexPath.row]
+        self.presenter?.didSeletc(withMovie: movie)
+    }
     
 }

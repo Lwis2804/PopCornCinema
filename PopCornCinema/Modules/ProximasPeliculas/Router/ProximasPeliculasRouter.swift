@@ -27,4 +27,12 @@ class ProximasPeliculasRouter {
 
 extension ProximasPeliculasRouter: ProximasPeliculas_PresenterToRouterProtocol {
     
+ func goToMoviesDetailView(withMovie movie: ModeloMovies,andView view: ProximasPeliculas_PresenterToViewProtocol) {
+        if let view = view as? ProximasPeliculasViewController{
+            let vc = MoviesDetailViewRouter.createModule(andMovie: movie)
+            view.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
 }
