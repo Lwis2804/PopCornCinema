@@ -16,10 +16,18 @@ class PeliculasTopPresenter: PeliculasTop_ViewToPresenterProtocol {
         interactor?.getPeliculasTopFromInteractor()
     }
     
+    func didSelect(withMovie movie : ModeloMovies) {
+        if let view = view {
+            router?.goToMoviesDetailView(with: movie, andView: view)
+        }
+    }
+    
+    
 }
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension PeliculasTopPresenter: PeliculasTop_InteractorToPresenterProtocol {
+    
     func getPeloculasTopFromInteractor(withResponse response: TopRatedResponse) {
         view?.updatePeliculasTop(withResponse: response)
     }

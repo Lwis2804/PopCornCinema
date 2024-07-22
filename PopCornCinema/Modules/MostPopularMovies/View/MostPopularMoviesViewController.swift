@@ -27,10 +27,6 @@ class MostPopularMoviesViewController: UIViewController {
         self.tableMostPopularMovies.dataSource = self
         self.tableMostPopularMovies.register(MostPopularTableViewCell.nib, forCellReuseIdentifier: MostPopularTableViewCell.identifier)
     }
-    
-    
-    
-    
 }
 
 

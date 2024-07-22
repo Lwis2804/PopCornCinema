@@ -27,4 +27,12 @@ class PeliculasTopRouter {
 
 extension PeliculasTopRouter: PeliculasTop_PresenterToRouterProtocol {
     
+    func goToMoviesDetailView(with movie: ModeloMovies, andView view: PeliculasTop_PresenterToViewProtocol) {
+        if let view = view as? PeliculasTopViewController {
+            let vc = MoviesDetailViewRouter.createModule(andMovie: movie)
+            view.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
 }

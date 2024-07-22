@@ -18,5 +18,9 @@ extension PeliculasTopViewController : UITableViewDelegate & UITableViewDataSour
         return cCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = getPeliculasTop[indexPath.row]
+        self.presenter?.didSelect(withMovie: movie)
+    }
     
 }

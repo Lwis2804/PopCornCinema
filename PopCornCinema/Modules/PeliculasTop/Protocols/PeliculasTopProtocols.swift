@@ -26,7 +26,9 @@ protocol PeliculasTop_ViewToPresenterProtocol: AnyObject {
 	var view: PeliculasTop_PresenterToViewProtocol? { get set }
 	var interactor: PeliculasTop_PresenterToInteractorProtocol? { get set }
 	var router: PeliculasTop_PresenterToRouterProtocol? { get set }
+    
     func getToPeliculasTop()
+    func didSelect(withMovie movie : ModeloMovies)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -50,6 +52,7 @@ protocol PeliculasTop_ViewToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> INTERACTOR
 protocol PeliculasTop_PresenterToInteractorProtocol: AnyObject {
     var presenter: PeliculasTop_InteractorToPresenterProtocol? { get set }
+    
     func getPeliculasTopFromInteractor()
 }
 
@@ -73,6 +76,7 @@ protocol PeliculasTop_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol PeliculasTop_InteractorToPresenterProtocol: AnyObject {
+    
     func getPeloculasTopFromInteractor(withResponse response : TopRatedResponse)
 }
 
@@ -91,6 +95,7 @@ protocol PeliculasTop_InteractorToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> VIEW
 protocol PeliculasTop_PresenterToViewProtocol: AnyObject {
     var presenter: PeliculasTop_ViewToPresenterProtocol? { get set }
+    
     func updatePeliculasTop(withResponse reponse : TopRatedResponse)
 }
 
@@ -107,4 +112,6 @@ protocol PeliculasTop_PresenterToViewProtocol: AnyObject {
 
 // MARK: PRESENTER -> ROUTER
 protocol PeliculasTop_PresenterToRouterProtocol: AnyObject {
+    
+    func goToMoviesDetailView(with movie : ModeloMovies, andView view : PeliculasTop_PresenterToViewProtocol)
 }
