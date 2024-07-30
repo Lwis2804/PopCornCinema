@@ -30,6 +30,7 @@ class MoviesDetailViewViewController: UIViewController {
     }
     
     func setUpViewInfo(){
+        
         self.lblTitleMovie.text = self.movieUpdateInfo.title
         self.overViewMovie.text = self.movieUpdateInfo.overview
         if let urlBackdrop = self.movieUpdateInfo.backdropPath,
